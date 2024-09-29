@@ -12,8 +12,11 @@ import '../app/globals.css';
 import seashells from './assets/seashells.png';
 import pearls from './assets/pearls.png';
 import daisyFlower from './assets/daisyFlower.png';
-import aboutsectionImage from './assets/about.png'
-import { Navigation } from 'swiper/modules';
+import aboutsectionImage from './assets/about.png';
+import img1 from './assets/img1.jpg'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
+import img4 from './assets/img4.jpg'
 export default function Home() {
 
 
@@ -55,9 +58,9 @@ export default function Home() {
             <div className="p-4">
               <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Seashell Collection</h4>
 
-              <button className="bg-[#202020] shadow-sm  py-2 px-5 text-xs text-white font-semibold">
+              <a  href="seashellProducts" className="bg-[#202020] shadow-sm  py-2 px-5 text-xs text-white font-semibold">
                 View All
-              </button>
+              </a>
             </div>
 
           </div>
@@ -110,7 +113,7 @@ export default function Home() {
           </div>
           <div className='relative  p-10 w-full h-full/3 font-mono rounded-lg text-center flex flex-col items-center justify-center'>
             <p >At Blaze.lk, we craft unique, handmade accessories that bring a touch of elegance and personality to your everyday style.  Specializing in pearl bracelets, seashell earrings, necklaces, hair clips, and key tags, each piece is carefully designed with love and creativity.  Our commitment to quality ensures that every item reflects timeless beauty and craftsmanship, offering you one-of-a-kind pieces at affordable prices. Celebrate your individuality with our handcrafted collections, made to inspire and enhance your look.</p>
-            <a href="#productsection" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent  border border-black  hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300  ">
+            <a href="#customerRiview" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent  border border-black  hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300  ">
               Customer Reviews
               <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
@@ -121,41 +124,47 @@ export default function Home() {
 
       </section>
 
-      {/* custoomerRiview section */}
-      <section id='skillsection' className="w-screen/2 bg-[#fafafa]  p-4 md:p-8 lg:p-12 xl:p-16" data-aos="fade-up">
+      {/* customerRiview section */}
+      <section id='customerRiview' className="w-screen/2 bg-[#fafafa]  p-4 md:p-8 lg:p-12 xl:p-16" data-aos="fade-up">
         <div className="container mx-auto ">
-          <div className="relative inline-block p-5">
-            <h2 className="text-gray-900 text-4xl font-bold font-serif leading-normal lg:text-start  border-b-2 border-gray-900 pb-2">
-              Cus
-            </h2>
-          </div>
-
-          <div className="w-full relative">
-            <div className="swiper centered-slide-carousel swiper-container relative">
-              <div className="swiper-wrapper">
-
-                <div className="swiper-slide">
-                  <text>sdsdsd</text>
-                </div>
-                <div className="swiper-slide">
-                  <text>sdsdsd</text>
-                </div>
-                <div className="swiper-slide">
-                  <text>sdsdsd</text>
-                </div>
-                <div className="swiper-slide ">
-                  <text>sdsdsd</text>
-                </div>
-                <div className="swiper-slide ">
-                  <text>sdsdsd</text>
-                </div>
+          <h2 className="text-3xl md:text-3xl pb-3 pt-3 font-bold items-center">
+            <span className='text-[#202020] font-mono pr-1'>Customer Review</span>
+          </h2>
+          <div className="grid grid-cols-4 gap-4 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-indigo rounded-lg items-center justify-center">
+            <div className="relative max-w-xs rounded-2xl transition-all duration-500">
+              <div className="block overflow-hidden flex justify-center">
+                <img src={img1.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
               </div>
+
+
+            </div>
+            <div className="relative max-w-xs rounded-2xl transition-all duration-500">
+              <div className="block overflow-hidden flex justify-center">
+                <img src={img2.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
+              </div>
+
+
+            </div>
+
+            <div className="relative max-w-xs rounded-2xl transition-all duration-500">
+              <div className="block overflow-hidden flex justify-center">
+                <img src={img4.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
+              </div>
+
+
+            </div>
+
+            <div className="relative max-w-xs rounded-2xl transition-all duration-500">
+              <a href="https://www.facebook.com/media/set/?set=a.337163209270194&type=3"  target="_blank" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent  border border-black  hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300  ">
+                View All
+                <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </div>
           </div>
         </div>
       </section>
-
-
     </main >
   );
 }
