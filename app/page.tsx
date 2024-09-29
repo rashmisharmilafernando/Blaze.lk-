@@ -1,9 +1,8 @@
 "use client";
-import { useEffect } from 'react';
+ 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './assets/css/style.css';
-import { Swiper, SwiperSlide } from "swiper/react";
+import './assets/css/style.css'; 
 import "swiper/swiper-bundle.css";
 import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import '../app/globals.css';
@@ -12,8 +11,7 @@ import pearls from './assets/pearls.png';
 import daisyFlower from './assets/daisyFlower.png';
 import aboutsectionImage from './assets/about.png';
 import img1 from './assets/img1.jpg';
-import img2 from './assets/img2.jpg';
-import img3 from './assets/img3.jpg';
+import img2 from './assets/img2.jpg'; 
 import img4 from './assets/img4.jpg';
 
 export default function Home() {
