@@ -126,7 +126,7 @@ export default function Home() {
         <div className="container mx-auto ">
           <div className="relative inline-block p-5">
             <h2 className="text-gray-900 text-4xl font-bold font-serif leading-normal lg:text-start  border-b-2 border-gray-900 pb-2">
-              SKILLS
+              Cus
             </h2>
           </div>
 
