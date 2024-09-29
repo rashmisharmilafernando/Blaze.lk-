@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageSrc, title, price }) => 
                     <h6 className="font-medium text-xl leading-8 text-black mb-2">{title}</h6>
                     <h6 className="font-semibold text-lg leading-8 text-[#ef4a0d]">{price}</h6>
                 </div>
-                <a href="https://wa.me/0702713066" target="_blank"
+                <a href="https://wa.me/94702713066" target="_blank"
                     className="p-2 min-[400px]:p-4 rounded-full bg-white border border-gray-300 flex items-center justify-center group shadow-sm shadow-transparent transition-all duration-500 hover:shadow-gray-200 hover:border-gray-400 hover:bg-gray-50">
                     <svg className="stroke-gray-900 transition-all duration-500 group-hover:stroke-black"
                         xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
