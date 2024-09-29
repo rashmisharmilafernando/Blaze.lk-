@@ -94,7 +94,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* about section */}
       <section id='aboutsection' className="w-full bg-[#fafafa]  pl-[130px]  pr-[130px] pt-[95px] " data-aos="fade-up">
         <h2 className="text-3xl md:text-3xl pb-3 pt-3 font-bold items-center">

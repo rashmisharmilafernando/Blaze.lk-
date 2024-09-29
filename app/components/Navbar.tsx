@@ -56,7 +56,7 @@ export default function Navbar() {
               </svg>
 
             </a>
-            <a href="https://wa.me/0702713066" target="_blank" className="pr-4"
+            <a href="https://wa.me/94702713066" target="_blank" className="pr-4"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
