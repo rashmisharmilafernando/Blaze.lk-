@@ -46,53 +46,49 @@ export default function Home() {
 
       {/* product section */}
       <section id='productsection' className="h-screen w-full bg-[#fafafa] pb-[50px] p-[120px] items-center justify-center">
-        <h2 className="text-3xl md:text-3xl pb-5   font-bold items-center">
+        <h2 className="text-3xl md:text-3xl pb-5 font-bold items-center">
           <span className='text-[#202020] font-mono pr-1'>Collection</span>
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-1 sm:items-center justify-center md:grid-cols-3 gap-3 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-indigo rounded-lg items-center justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-indigo rounded-lg items-center justify-center">
 
-          <div className="relative max-w-xs border border-solid border-[#202020] rounded-2xl transition-all duration-500">
+          <div className="relative max-w-xs w-full sm:max-w-[90%] md:max-w-xs border border-solid border-[#202020] transition-all duration-500">
             <div className="block overflow-hidden flex justify-center">
-              <img src={seashells.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
+              <img src={seashells.src} className="w-full h-[300px] object-cover" />
             </div>
             <div className="p-4">
               <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Seashell Collection</h4>
-
-              <a  href="seashellProducts" className="bg-[#202020] shadow-sm  py-2 px-5 text-xs text-white font-semibold">
+              <a href="seashellProducts" className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">
                 View All
               </a>
             </div>
-
           </div>
 
-          <div className="relative max-w-xs border border-solid border-[#202020] rounded-2xl transition-all duration-500">
+          <div className="relative max-w-xs w-full sm:max-w-[90%] md:max-w-xs border border-solid border-[#202020] transition-all duration-500">
             <div className="block overflow-hidden flex justify-center">
-              <img src={pearls.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
+              <img src={pearls.src} className="w-full h-[300px] object-cover" />
             </div>
             <div className="p-4">
-              <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Preals Collection</h4>
-
-              <button className="bg-[#202020] shadow-sm  py-2 px-5 text-xs text-white font-semibold">
+              <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Pearls Collection</h4>
+              <button className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">
                 View All
               </button>
             </div>
-
           </div>
-          <div className="relative max-w-xs border border-solid border-[#202020] rounded-2xl transition-all duration-500">
+
+          <div className="relative max-w-xs w-full sm:max-w-[90%] md:max-w-xs border border-solid border-[#202020] transition-all duration-500">
             <div className="block overflow-hidden flex justify-center">
-              <img src={daisyFlower.src} className="w-[300px] h-[300px] md:w-[300px] md:h-[300px]" />
+              <img src={daisyFlower.src} className="w-full h-[300px] object-cover" />
             </div>
             <div className="p-4">
               <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Daisy Flower Collection</h4>
-
-              <button className="bg-[#202020] shadow-sm  py-2 px-5 text-xs text-white font-semibold">
+              <button className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">
                 View All
               </button>
             </div>
-
           </div>
         </div>
       </section>
+
 
 
       {/* about section */}
@@ -155,7 +151,7 @@ export default function Home() {
             </div>
 
             <div className="relative max-w-xs rounded-2xl transition-all duration-500">
-              <a href="https://www.facebook.com/media/set/?set=a.337163209270194&type=3"  target="_blank" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent  border border-black  hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300  ">
+              <a href="https://www.facebook.com/media/set/?set=a.337163209270194&type=3" target="_blank" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent  border border-black  hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300  ">
                 View All
                 <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
