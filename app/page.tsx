@@ -45,11 +45,11 @@ export default function Home() {
       </section>
 
       {/* product section */}
-      <section id='productsection' className="h-screen w-full bg-[#fafafa]  p-[130px] items-center justify-center">
+      <section id='productsection' className="h-screen w-full bg-[#fafafa] pb-[50px] p-[120px] items-center justify-center">
         <h2 className="text-3xl md:text-3xl pb-5   font-bold items-center">
           <span className='text-[#202020] font-mono pr-1'>Collection</span>
         </h2>
-        <div className="grid grid-cols-3 gap-3 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-indigo rounded-lg items-center justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 sm:items-center justify-center md:grid-cols-3 gap-3 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-indigo rounded-lg items-center justify-center">
 
           <div className="relative max-w-xs border border-solid border-[#202020] rounded-2xl transition-all duration-500">
             <div className="block overflow-hidden flex justify-center">
@@ -94,8 +94,9 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* about section */}
-      <section id='aboutsection' className="w-full bg-[#fafafa]  pl-[130px]  pr-[130px] pt-[95px] " data-aos="fade-up">
+      <section id='aboutsection' className="w-full bg-[#fafafa]  pl-[130px]  pr-[130px] pt-[120px] " data-aos="fade-up">
         <h2 className="text-3xl md:text-3xl pb-3 pt-3 font-bold items-center">
           <span className='text-[#202020] font-mono pr-1'>About</span>
         </h2>
