@@ -8,7 +8,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ imageSrc, title, price }) => {
   // Dynamically create the WhatsApp message link with product details
-  const whatsappMessage = `Order details:Product: ${title}Price: ${price}Image: ${imageSrc}`;
+  const whatsappMessage = `Order details:Product: ${title}/nPrice: ${price}/nImage: ${imageSrc}`;
   const whatsappLink = `https://wa.me/94702713066?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
