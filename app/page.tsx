@@ -10,6 +10,7 @@ import seashells from './assets/seashells.png';
 import pearls from './assets/pearls.png';
 import daisyFlower from './assets/daisyFlower.png';
 import aboutsectionImage from './assets/about.png';
+import img from './assets/img.jpg';
 import img1 from './assets/img1.jpg';
 import img2 from './assets/img2.jpg'; 
 import img4 from './assets/img4.jpg';
@@ -59,7 +60,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Pearls Collection</h4>
-              <button className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">View All</button>
+              <a href="pearlProducts"  className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">View All</a>
             </div>
           </div>
 
@@ -70,7 +71,7 @@ export default function Home() {
             </div>
             <div className="p-4">
               <h4 className="text-base font-semibold text-[#ef4a0d] mb-2 capitalize transition-all duration-500">Daisy Flower Collection</h4>
-              <button className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">View All</button>
+              <a href="daisyFlowerProducts"  className="bg-[#202020] shadow-sm py-2 px-5 text-xs text-white font-semibold">View All</a>
             </div>
           </div>
         </div>
@@ -100,7 +101,7 @@ export default function Home() {
       </section>
 
       {/* Customer Review Section */}
-      <section id='customerReview' className="bg-[#fafafa] py-8">
+      <section  id='contactsection' className="bg-[#fafafa] py-8">
         <div className="container mx-auto">
           <h2 className="text-3xl pb-3 font-bold text-center">
             <span className='text-[#202020] font-mono'>Customer Reviews</span>
@@ -120,7 +121,7 @@ export default function Home() {
             </div>
             {/* View All Button */}
             <div className="relative max-w-xs mx-auto">
-              <button className="bg-[#202020] py-2 px-5 text-white font-semibold">View All Reviews</button>
+              <a href='https://www.facebook.com/media/set/?set=a.337163209270194&type=3' className="bg-[#202020] py-2 px-5 text-white font-semibold">View All Reviews</a>
             </div>
           </div>
         </div>

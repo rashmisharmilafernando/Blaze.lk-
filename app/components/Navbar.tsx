@@ -133,17 +133,17 @@ export default function Navbar() {
                 </li>
               )}
               <li className="relative text-sm font-mono font-light w-fit block font-black ">
-                <a href="#homesection">Home</a>
+                <a href="/">Home</a>
               </li>
               <li className="relative text-sm font-mono  font-light w-fit block font-black ">
-                <a href="#productsection">Collections</a>
+                <a href="seashellProducts">Seashell Collections</a>
               </li>
 
               <li className="relative text-sm font-mono font-light w-fit block font-black">
-                <a href="#aboutsection">About</a>
+                <a href="pearlProducts">Pearl Collections</a>
               </li>
               <li className="relative text-sm  font-mono font-light w-fit block font-black">
-                <a href="#contactsection">Contact</a>
+                <a href="daisyFlowerProducts">Daisy Flower Collections</a>
               </li>
             </ul>
           </div>
