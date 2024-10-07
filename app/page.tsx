@@ -121,7 +121,7 @@ export default function Home() {
             </div>
             {/* View All Button */}
             <div className="relative max-w-xs mx-auto">
-              <a href='https://www.facebook.com/media/set/?set=a.337163209270194&type=3' className="bg-[#202020] py-2 px-5 text-white font-semibold">View All Reviews</a>
+              <a href='https://www.facebook.com/media/set/?set=a.337163209270194&type=3' target="_blank" className="bg-[#202020] py-2 px-5 text-white font-semibold">View All Reviews</a>
             </div>
           </div>
         </div>
