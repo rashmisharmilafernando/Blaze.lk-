@@ -11,7 +11,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageSrc, title, price }) => 
   const whatsappMessage = `Hi! I'd like to order the following product:\n\n📦 *Product:* ${title}\n💲 *Price:* ${price}\n🖼️ *Image:* [Click here to view the product image](${imageSrc})\n\nPlease confirm the availability and share the next steps. Thanks!`;
   
   // Encode the message for use in the WhatsApp URL
-  const whatsappLink = `https://wa.me/94702713066?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappLink = `https://wa.me/p/7529790103721496/94702713066?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <a
