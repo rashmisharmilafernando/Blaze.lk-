@@ -12,7 +12,7 @@ export default function daisyFlowerProducts() {
                     <ProductCard
                         imageSrc={seashells01.src}
                         title="Earrings"
-                        price="Rs 300.00 LKR"
+                        price="Rs 250.00 LKR"
                     />
                     {/* <ProductCard
                         imageSrc="https://pagedone.io/asset/uploads/1700726207.png"
