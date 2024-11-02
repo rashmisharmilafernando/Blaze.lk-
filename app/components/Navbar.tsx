@@ -1,23 +1,19 @@
 "use client";
-import { useState } from "react";
-import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeControlPhone } from "@fortawesome/free-solid-svg-icons";
-
-export default function Navbar() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
   };
 
   return (
     <section>
-
       <header className="fixed w-full bg-[#fafafa] z-50">
-        <nav className="flex justify-between items-center py-3 p-1 bg-[#202020]">
+
+        <nav className="flex justify-between items-center py-2 p-1 bg-[#202020]">
           <span className="flex items-center text-xs font-sans text-[#B7B7B7] ">
             <svg xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -84,81 +80,69 @@ export default function Navbar() {
             </a>
 
           </div>
-          <button
-            type="button"
-            className="md:hidden p-2"
-            onClick={toggleMobileMenu}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
+
         </nav>
+
         <nav className="flex justify-between items-center text-sm pl-5 pr-5 pt-4 pb-4">
+          <Link href='/' aria-label="Homepage">
+            <img src={logo.src} alt="Logo" width={60} />
+          </Link>
 
-          {/* Logo Section */}
-          <ul className="flex items-center gap-4 font-poppins">
-            <Link href="/">
-              <img src={logo.src} alt="Logo" width={60} />
-            </Link>
-          </ul>
+          {/* Desktop Menu */}
+          <nav>
+            <ul className='hidden sm:flex'>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+                <a href='/' className='link link--text'>Home</a>
+              </li>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+                <a href='seashellProducts' className='link link--text'>Seashell Collections</a>
+              </li>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+                <a href='pearlProducts' className='link link--text'>Pearls Collections</a>
+              </li>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+                <a href='daisyFlowerProducts' className='link link--text'>Daisy Flower Collections</a>
+              </li>
+            </ul>
+          </nav>
 
-          {/* Mobile Menu Toggle Button (Only visible on small screens) */}
-          {!isMobileMenuOpen && (  // Only show the menu icon when the menu is closed
-            <div className="md:hidden flex items-center">
-              <button className="text-black" onClick={toggleMobileMenu}>
-                <FaBars size={24} />   {/* Menu icon */}
-              </button>
-            </div>
-          )}
+          {/* Mobile Button */}
+          <div onClick={handleNav} className='block sm:hidden z-10'>
+            {nav ? (
+              <AiOutlineClose size={20} aria-label="Close menu" />
+            ) : (
+              <AiOutlineMenu size={20} aria-label="Open menu" />
+            )}
+          </div>
 
-          {/* Menu Links */}
+          {/* Mobile Menu */}
           <div
-            className={`${isMobileMenuOpen ? "block" : "hidden"
-              } md:flex md:items-center`}
+            className={`${nav ? 'sm:hidden absolute top-[100px] left-0 right-0 bottom-0 flex w-full h-screen bg-[#fafafa] ease-in duration-300'
+              : 'sm:hidden absolute top-[100px] left-[-100%] right-0 bottom-0 flex w-full h-screen bg-[#fafafa] ease-in duration-300'
+              }`}
+            aria-hidden={!nav}
           >
-            <ul className="flex flex-col items-center gap-4 md:flex-row md:gap-[2vw] font-poppins">
-              {/* Render Close Icon as the first item in the list when mobile menu is open */}
-              {isMobileMenuOpen && (
-                <li className="md:hidden text-black">
-                  <button onClick={toggleMobileMenu}>
-                    <FaTimes size={24} /> {/* Close icon */}
-                  </button>
-                </li>
-              )}
-              <li className="relative text-sm font-mono font-light w-fit block font-black ">
-                <a href="/">Home</a>
+            <ul>
+              <li onClick={handleNav} className='p-4 text-[1rem]'>
+                <Link href='/' className="font-mono hover:font-bold">Home</Link>
               </li>
-              <li className="relative text-sm font-mono  font-light w-fit block font-black ">
-                <a href="seashellProducts">Seashell Collections</a>
+              <li onClick={handleNav} className='p-4 text-[1rem]'>
+                <a href='seashellProducts' className='link link--text font-mono hover:font-bold'>Seashell Collections</a>
               </li>
-
-              <li className="relative text-sm font-mono font-light w-fit block font-black">
-                <a href="pearlProducts">Pearl Collections</a>
+              <li onClick={handleNav} className='p-4 text-[1rem]'>
+                <a href='pearlProducts' className='link link--text font-mono hover:font-bold'>Pearls Collections</a>
               </li>
-              <li className="relative text-sm  font-mono font-light w-fit block font-black">
-                <a href="daisyFlowerProducts">Daisy Flower Collections</a>
+              <li onClick={handleNav} className='p-4 text-[1rem]'>
+                <a href='daisyFlowerProducts' className='link link--text font-mono hover:font-bold'>Daisy Flower Collections</a>
               </li>
             </ul>
           </div>
 
-          <div>   <span className="flex items-center text-sm font-light text-black">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.7146 19.5C10.7146 20.3284 10.0239 21 9.17176 21C8.31967 21 7.62891 20.3284 7.62891 19.5" stroke="black" stroke-width="null" stroke-linecap="round" className="my-path"></path>
-              <path d="M16.8865 19.5C16.8865 20.3284 16.1957 21 15.3436 21C14.4915 21 13.8008 20.3284 13.8008 19.5" stroke="black" stroke-width="null" stroke-linecap="round" className="my-path"></path>
-              <path d="M3.51429 6L4.96114 13.7354C5.25319 15.2968 5.39921 16.0775 5.95475 16.5387C6.51029 17 7.30451 17 8.89296 17H15.6218C17.2103 17 18.0046 17 18.5601 16.5387C19.1157 16.0774 19.2617 15.2967 19.5537 13.7352L20.1146 10.7352C20.5248 8.54152 20.7299 7.44469 20.1301 6.72234C19.5303 6 18.4144 6 16.1827 6H3.51429ZM3.51429 6L3 3" stroke="black" stroke-width="null" stroke-linecap="round" className="my-path"></path>
-            </svg>
-
-          </span>
-          </div>
         </nav>
       </header>
     </section>
   );
-}
+};
+
+export default Navbar;
+
