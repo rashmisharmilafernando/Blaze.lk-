@@ -78,8 +78,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id='aboutsection' className="w-full bg-[#fafafa] px-5 pt-[120px]">
-        <h2 className="text-3xl pb-3 font-bold text-center">
+      <section id='aboutsection' className="w-full bg-[#fafafa] px-5 pt-[50px] pb-[50px]">
+        <h2 className="text-3xl pb-5 font-bold text-center">
           <span className='text-[#202020] font-mono'>About</span>
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -90,20 +90,20 @@ export default function Home() {
             <p>
               At Blaze.lk, we craft unique, handmade accessories that bring a touch of elegance and personality to your everyday style. Specializing in pearl bracelets, seashell earrings, necklaces, hair clips, and key tags, each piece is carefully designed with love and creativity. Our commitment to quality ensures that every item reflects timeless beauty and craftsmanship, offering you one-of-a-kind pieces at affordable prices. Celebrate your individuality with our handcrafted collections, made to inspire and enhance your look.
             </p>
-            <a href="#customerReview" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent border border-black hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300">
+            {/* <a href="#customerReview" className="inline-flex items-center font-mono justify-center mt-5 px-5 py-3 text-base font-medium text-center text-black bg-transparent border border-black hover:bg-[#ef4a0d] hover:border-[#ef4a0d] hover:text-white focus:ring-4 focus:ring-blue-300">
               Customer Reviews
               <svg className="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
 
       {/* Customer Review Section */}
-      <section  id='contactsection' className="bg-[#fafafa] py-8">
+      <section  id='contactsection' className="bg-[#fafafa] py-8  pt-[50px] pb-[50px]">
         <div className="container mx-auto">
-          <h2 className="text-3xl pb-3 font-bold text-center">
+          <h2 className="text-3xl pb-5 font-bold text-center">
             <span className='text-[#202020] font-mono'>Customer Reviews</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 font-mono text-sm text-center font-bold leading-6 mx-auto">

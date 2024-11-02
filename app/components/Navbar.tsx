@@ -91,16 +91,16 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <nav>
             <ul className='hidden sm:flex'>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
                 <a href='/' className='link link--text'>Home</a>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
                 <a href='seashellProducts' className='link link--text'>Seashell Collections</a>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
                 <a href='pearlProducts' className='link link--text'>Pearls Collections</a>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black '>
+              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
                 <a href='daisyFlowerProducts' className='link link--text'>Daisy Flower Collections</a>
               </li>
             </ul>
@@ -123,11 +123,11 @@ const Navbar = () => {
             aria-hidden={!nav}
           >
             <ul>
-              <li onClick={handleNav} className='p-4 text-[1rem]'>
+              <li onClick={handleNav} className='p-5 text-[1rem] '>
                 <Link href='/' className="font-mono hover:font-bold">Home</Link>
               </li>
               <li onClick={handleNav} className='p-4 text-[1rem]'>
-                <a href='seashellProducts' className='link link--text font-mono hover:font-bold'>Seashell Collections</a>
+                <a href='seashellProducts' className='link link--text font-mono hover:font-bold '>Seashell Collections</a>
               </li>
               <li onClick={handleNav} className='p-4 text-[1rem]'>
                 <a href='pearlProducts' className='link link--text font-mono hover:font-bold'>Pearls Collections</a>
