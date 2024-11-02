@@ -14,7 +14,7 @@ export default function daisyFlowerProducts() {
                         title="Earrings"
                         price="Rs 300.00 LKR"
                     />
-                    <ProductCard
+                    {/* <ProductCard
                         imageSrc="https://pagedone.io/asset/uploads/1700726207.png"
                         title="Cold Perfume"
                         price="$100"
@@ -28,7 +28,7 @@ export default function daisyFlowerProducts() {
                         imageSrc="https://pagedone.io/asset/uploads/1700726207.png"
                         title="Cold Perfume"
                         price="$100"
-                    />
+                    /> */}
                 </div>
             </div>
         </section>
