@@ -12,8 +12,7 @@ export default function pearlProducts() {
                     <ProductCard
                         imageSrc={seashells01.src}
                         title="Earrings"
-                        price="Rs 300.00 LKR"
-                    />
+                        price="Rs 300.00 LKR" whatsappLink={""}                    />
                     {/* <ProductCard
                         imageSrc="https://pagedone.io/asset/uploads/1700726207.png"
                         title="Cold Perfume"

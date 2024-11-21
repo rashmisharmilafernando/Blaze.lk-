@@ -1,13 +1,21 @@
 "use client";
 import logo from "../assets/logo.png";
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { usePathname } from 'next/navigation';
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const pathname = usePathname(); // Hook to get the current path
+
   const handleNav = () => {
     setNav(!nav);
   };
+
+  const isActive = (path: string) => pathname === path ? 'text-black-900   font-bold' : 'text-gray-700';
+
 
   return (
     <section>
@@ -91,16 +99,16 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <nav>
             <ul className='hidden sm:flex'>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
-                <a href='/' className='link link--text'>Home</a>
+              <li className={`p-4 ${isActive('/')} font-mono font-light hover:font-bold`}>
+                <Link href='/'>Home</Link>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
+              <li className={`p-4 ${isActive('/seashellProducts')} font-mono font-light hover:font-bold`}>
                 <a href='seashellProducts' className='link link--text'>Seashell Collections</a>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
+              <li className={`p-4 ${isActive('/pearlProducts')} font-mono font-light hover:font-bold`}>
                 <a href='pearlProducts' className='link link--text'>Pearls Collections</a>
               </li>
-              <li className='p-4 relative text-sm font-mono font-light w-fit block font-black hover:font-bold'>
+              <li className={`p-4 ${isActive('/daisyFlowerProducts')} font-mono font-light hover:font-bold`}>
                 <a href='daisyFlowerProducts' className='link link--text'>Daisy Flower Collections</a>
               </li>
             </ul>
